@@ -2,6 +2,8 @@
      padding: 0;
      margin: 0;
      box-shadow: 0;
+}
+body{
      background-color: #1A0B2E;
 }
 
@@ -75,13 +77,6 @@ li a {
 }
 
 
-/* support session */
-button img {
-     color: red;
-     background-color: rgba(245, 222, 179, 0);
-}
-
-
 /* header section */
 
 header {
@@ -123,7 +118,7 @@ header {
 .content h2{
      font-size: 60px;
      color: #ffffff;
-     margin-bottom: 8px;
+     margin-bottom: 10px;
      font-weight: 700;
 }
 
@@ -138,7 +133,7 @@ header {
 .hero-button{
      display: flex;
      gap: 10px;
-     align-items: center;
+     justify-content: center;
 }
 
 
@@ -154,20 +149,18 @@ header {
      font-size: 16px;
      font-weight: 600;
      color: #00FF88;
-     /* text-align: center; */
-}
-.btn-2 img{
-     color: #00FF88;
+     background-color: #ffffff00;
+     
 }
 
 
 
 /* podcast section  */
 
-.podcast{
+.podcast-container{
      max-width: 1600px;
      margin: 0 auto;
-     padding: 50px 200px 120px 200px;
+     padding: 50px 200px 60px 200px;
 }
 .pod-contant h2{
      font-size: 48px;
@@ -195,8 +188,7 @@ header {
 
 .rating-card{
      display: flex;
-     gap: 100px;
-     align-items: center;
+     justify-content: space-between;
 }
 
 .rating-card h2{
@@ -212,4 +204,58 @@ header {
      font-size: 400;
      color: #FFFFFF;
      opacity: 75%;
+}
+
+/* episodes-container */
+
+.episodes{
+     background-color: #1A0B2E;
+     max-width: 1600px;
+     margin: 0 auto;
+     padding: 60px 120px 120px 120px;
+}
+.episodes h2{
+     color: #ffffff;
+     font-size: 38px;
+     font-weight: 700;
+     text-align: center;
+     margin-bottom: 40px;
+
+}
+
+.episodes-container{
+     display: flex;
+     align-items: center;
+     gap: 30px;
+}
+
+.card-episodes{
+     /* border: 2px solid #000000; */
+     background-color: #250D44;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card-content{
+     padding: 20px;
+}
+.card-content h4 {
+     font-size: 24px;
+     font-weight: 600;
+     color: #FFFFFF;
+     margin-bottom: 12px;
+}
+
+.card-content p{
+     font-size: 16px;
+     font-weight: 400;
+     color: #FFFFFF;
+     opacity: 75%;
+     margin-bottom: 12px;
+}
+
+h5{
+     color: #00FF88;
+     font-size: 16;
+     font-weight: 600;
 }
