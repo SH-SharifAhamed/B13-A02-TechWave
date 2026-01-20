@@ -30,8 +30,6 @@ body{
      color: #ffffff;
 }
 
-
-/* support session */
 .logo h2 span {
      background: linear-gradient(to top, #F7E93F, #FB09B4, #9100F8);
      -webkit-background-clip: text;
@@ -66,13 +64,19 @@ li a {
      align-items: center;
      gap: 10px;
      padding: 12px 20px;
-     background: linear-gradient(45deg, #F7E93F, #FB09B4, #9100F8);
+     background: linear-gradient(45deg, #f7e93f, #FB09B4, #9100F8);
      border: none;
      border-radius: 50px;
      font-size: 16px;
      font-weight: 600;
      color: #FFFFFF;
      text-align: center;
+     cursor: pointer;
+}
+
+button:hover{
+     transform: translateY(-3px);
+     box-shadow: 0 10px 30px rgba(145, 5, 226, 0.635);
 }
 
 
@@ -80,12 +84,9 @@ li a {
 
 header {
      text-align: center;
-     padding-top: 100px;
      margin-bottom: 100px;
 }
 .hero-container{
-     /* background-color: #F7E93F ; */
-     /* padding-top: 100px; */
      justify-content: center;
      align-items: center;
      text-align: center;
@@ -94,14 +95,36 @@ header {
 .img-content{
      background-image: url(./assets/hero-bg.png);
      background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     padding: 100px 40px 100px;
+
+     position: relative;
 }
 
+.badge{
+     position: absolute;
+     top: 7rem;
+     left: 43rem;
+}
 
 .img{
      background-image: url(./assets/hero-circle.png);
+     background-size: 20em;
+     padding: 5rem;
+     background-position: center;
      background-repeat: no-repeat;
-     max-width: 1600px;
-     margin: 0 auto;
+}
+
+.img-content img{
+     animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+     0%, 100% {
+          transform: scale(1);
+     }
+     50% { transform: scale(1.1);}
 }
 
 .img-content span{
@@ -115,14 +138,14 @@ header {
 }
 
 h2{
-     font-size: 60px;
+     font-size: 2.5rem;
      color: #ffffff;
      margin-bottom: 10px;
      font-weight: 700;
 }
 
 p{
-     font-size: 1.5rem;
+     font-size: 1rem;
      font-weight: 400;
      color: #ffffff;
      opacity: 75%;
@@ -149,7 +172,7 @@ p{
      font-weight: 600;
      color: #00FF88;
      background-color: #ffffff00;
-     
+     cursor: pointer;
 }
 
 
@@ -160,6 +183,7 @@ p{
      max-width: 1600px;
      margin: 0 auto;
      padding: 50px 200px 60px 200px;
+     text-align: center;
 }
 
 
@@ -171,8 +195,14 @@ p{
 
 .rating-card{
      display: flex;
+     flex-wrap: wrap;
      justify-content: space-between;
 }
+
+.card:hover{
+     transform: translateY(-10px);
+}
+
 
 .rating-card h2{
      color: #00FF88;
@@ -193,6 +223,7 @@ p{
 
 .episodes-container{
      display: flex;
+     justify-content: space-between;
      align-items: center;
      gap: 30px;
 }
@@ -203,17 +234,25 @@ p{
     overflow: hidden;
 }
 
+.card-episodes:hover{
+     transform: translateY(-3px);
+     box-shadow: 0 10px 30px rgba(145, 5, 226, 0.635);
+}
+
+.video-content iframe{
+     width: 100%;
+     height: 11rem;
+}
+
 .card-content{
      padding: 20px;
 }
 .card-content h4 {
-     font-size: 24px;
+     font-size: 1.5rem;
      font-weight: 600;
      color: #FFFFFF;
      margin-bottom: 12px;
 }
-
-
 
 h5{
      display: flex;
@@ -222,6 +261,8 @@ h5{
      font-weight: 600;
      gap: 10px;
 }
+
+/* Meet the Host section  */
 
 .host{
      max-width: 1600px;
@@ -236,11 +277,19 @@ h5{
 
 .host-container{
      display: flex;
+     /* flex-wrap: wrap; */
      align-items: center;
      background-color: #250D44;
      border-radius: 40px;
      padding: 40px;
-     gap: 4em;
+     gap: .5rem;
+     margin-bottom: 120px;
+}
+
+
+.host-container:hover{
+     transform: translateY(-3px);
+     box-shadow: 0 10px 30px rgba(145, 5, 226, 0.635);
 }
 
 .host-content h3{
@@ -257,4 +306,34 @@ h5{
      background-image: url(./assets/Ellipse\ 4.png);
      background-repeat: no-repeat;
      padding: 12px;
+}
+
+/* footer section  */
+
+footer{
+     background-image: url(./assets/footer-bg.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+}
+.footer-content{
+     text-align: center;
+     padding: 100px;
+}
+
+.footer-content h2{
+     margin-bottom: 35px;
+}
+.footer-icon{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     color: #FFFFFF;
+     opacity: 75%;
+     gap: 2.5rem;
+     margin-bottom: 35px;
+}
+.footer-icon span{
+     display: flex;
+     gap: .5rem;
 }
