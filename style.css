@@ -98,14 +98,14 @@ header {
      background-size: cover;
      background-position: center;
      padding: 100px 40px 100px;
-
-     position: relative;
+     
+     
 }
 
 .badge{
      position: absolute;
-     top: 7rem;
-     left: 43rem;
+     left: 643px;
+     top: 20px;
 }
 
 .img{
@@ -114,6 +114,7 @@ header {
      padding: 5rem;
      background-position: center;
      background-repeat: no-repeat;
+     position: relative;
 }
 
 .img-content img{
@@ -208,6 +209,52 @@ p{
      color: #00FF88;
 }
 
+/* Choose TechWave */
+
+.choose-container{
+     background-color: #35116566;
+     max-width: 1600px;
+     margin: 0 auto;
+     padding: 100px 200px;
+}
+
+.choose-content{
+     display: grid;
+     grid-template-columns: repeat(3, 3fr);
+     grid-template-rows: repeat(2, 200px);
+     gap: 30px;
+}
+
+.choose-container h2{
+     text-align: center;
+     margin-bottom: 2.5rem;
+}
+
+.chose-card{
+     background-color: #9100f83d;
+     justify-content: center;
+     border-radius: 30px;
+     padding: 30px;
+}
+
+.grid-img-1{
+     grid-row: 1/span 2;
+}
+
+.gird-img-2, .grid-img-3{
+     grid-column: 2/span 4;
+}
+
+.gird-img-4{
+     grid-column: 1/ span 2;
+}
+
+.grid-img-5{
+     grid-column: 3/ span 3;
+}
+
+
+
 /* episodes-container */
 
 .episodes{
@@ -247,12 +294,7 @@ p{
 .card-content{
      padding: 20px;
 }
-.card-content h4 {
-     font-size: 1.5rem;
-     font-weight: 600;
-     color: #FFFFFF;
-     margin-bottom: 12px;
-}
+
 
 h5{
      display: flex;
@@ -292,8 +334,8 @@ h5{
      box-shadow: 0 10px 30px rgba(145, 5, 226, 0.635);
 }
 
-.host-content h3{
-     font-size: 2rem;
+h3{
+     font-size: 1rem;
      font-weight: 600;
      margin-bottom: 16px;
      color: #FFFFFF;
