@@ -27,7 +27,6 @@ body{
 }
 
 .logo h2 {
-     -webkit-text-stroke: 1px #000000;
      color: #ffffff;
 }
 
@@ -115,15 +114,15 @@ header {
 
 }
 
-.content h2{
+h2{
      font-size: 60px;
      color: #ffffff;
      margin-bottom: 10px;
      font-weight: 700;
 }
 
-.content p{
-     font-size: 16px;
+p{
+     font-size: 1.5rem;
      font-weight: 400;
      color: #ffffff;
      opacity: 75%;
@@ -162,23 +161,7 @@ header {
      margin: 0 auto;
      padding: 50px 200px 60px 200px;
 }
-.pod-contant h2{
-     font-size: 48px;
-     font-weight: 700;
-     text-align: center;
-     color: #FFFFFF;
-     margin-bottom: 16px;
-}
-.pod-contant p{
-     font-size: 16px;
-     font-weight: 400;
-     text-align: center;
-     margin-bottom: 80px;
-     color: #FFFFFF;
-     opacity: 75%;
-     /* margin-bottom: 80px;
-     border-bottom: 1px solid #412567; */
-}
+
 
 .line{
      border-bottom: 1px solid #412567;
@@ -192,18 +175,7 @@ header {
 }
 
 .rating-card h2{
-     font-size: 40px;
-     font-weight: 700;
      color: #00FF88;
-     text-align: center;
-     margin-bottom: 16px;
-}
-
-.rating-card p{
-     font-size: 16px;
-     font-size: 400;
-     color: #FFFFFF;
-     opacity: 75%;
 }
 
 /* episodes-container */
@@ -215,12 +187,8 @@ header {
      padding: 60px 120px 120px 120px;
 }
 .episodes h2{
-     color: #ffffff;
-     font-size: 38px;
-     font-weight: 700;
      text-align: center;
      margin-bottom: 40px;
-
 }
 
 .episodes-container{
@@ -230,7 +198,6 @@ header {
 }
 
 .card-episodes{
-     /* border: 2px solid #000000; */
      background-color: #250D44;
     border-radius: 15px;
     overflow: hidden;
@@ -246,16 +213,48 @@ header {
      margin-bottom: 12px;
 }
 
-.card-content p{
-     font-size: 16px;
-     font-weight: 400;
-     color: #FFFFFF;
-     opacity: 75%;
-     margin-bottom: 12px;
-}
+
 
 h5{
+     display: flex;
      color: #00FF88;
      font-size: 16;
      font-weight: 600;
+     gap: 10px;
+}
+
+.host{
+     max-width: 1600px;
+     margin: 0 auto;
+     padding: 0 120px;
+}
+
+.host h2{
+     text-align: center;
+     margin-bottom: 40px;
+}
+
+.host-container{
+     display: flex;
+     align-items: center;
+     background-color: #250D44;
+     border-radius: 40px;
+     padding: 40px;
+     gap: 4em;
+}
+
+.host-content h3{
+     font-size: 2rem;
+     font-weight: 600;
+     margin-bottom: 16px;
+     color: #FFFFFF;
+}
+.icon{
+     display: flex;
+     gap: 10px;
+}
+.icon img{
+     background-image: url(./assets/Ellipse\ 4.png);
+     background-repeat: no-repeat;
+     padding: 12px;
 }
