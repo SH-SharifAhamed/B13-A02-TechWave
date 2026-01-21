@@ -89,7 +89,7 @@ button:hover{
 
 header {
      text-align: center;
-     margin-bottom: 100px;
+     margin-bottom: 20px;
 }
 .hero-container{
      justify-content: center;
@@ -101,25 +101,28 @@ header {
      background-image: url(./assets/hero-bg.png);
      background-repeat: no-repeat;
      background-size: cover;
-     background-position: center;
-     padding: 100px 100px 10px 100px;
+     background-position: top center;
+     padding: 200px 20px 0 0;
 }
 
 .badge{
      position: absolute;
-     left: 605px;
+     left: 695px;
      top: 20px;
 }
 
 .img{
      background-image: url(./assets/hero-circle.png);
-     background-size: 20rem;
-     padding: 5rem;
+     background-size: 250px;
+     padding: 30px;
      background-position: center;
      background-repeat: no-repeat;
      position: relative;
      margin-bottom: 90px;
-     top: -35px;
+     top: -110px;
+}
+.img img{
+     width: 120px;
 }
 
 .img-content img{
@@ -383,6 +386,8 @@ footer{
      gap: .5rem;
 }
 
+
+
 @media screen and (max-width: 576px) {
 
      /* nav section  */
@@ -408,17 +413,7 @@ footer{
           display: block;
      }
 
-     
-
-     /* shear width */
-
-
-     .with{
-          max-width: 576px;
-          margin: 0 auto;
-          text-align: center;
-          padding: 20px;
-     }
+     /* shear  */
 
      h2{
           font-size: 30px;
@@ -431,25 +426,18 @@ footer{
 
      /* hero section  */
 
-     .hero-container{
-          padding: 40px 20px;
-     }
-
      .img-content{
           padding: 30px 30px 3px 30px;
-          background-image: url(./assets/hero-bg.png);
-          background-repeat: no-repeat;
-          background-size: 110%;
-          background-position: center;
      }
 
      .img{
      background-image: url(./assets/hero-circle.png);
-     background-size: 120px;
+     background-size: 130px;
      padding: 30px;
      background-position: center;
      background-repeat: no-repeat;
      position: relative;
+     top: -5px;
      }
 
      .img img {
@@ -461,8 +449,8 @@ footer{
           
      }
      .badge{
-          left: 218px;
-          top: 10px;
+          left: 195px;
+          top: 8px;
      }
 
      .content{
@@ -485,20 +473,35 @@ footer{
 
      /* about the podcast */
      .podcast-container{
+          max-width: 100%;
           text-align: center;
+          padding: 20px;
      }
      .rating-card{
           display: grid;
           grid-template-columns: repeat(2, 1fr);
      }
 
+     .line{
+          margin-bottom: 40px;
+     }
+
      /* Why Choose TechWave */
 
-     .choose-content{
+     .choose-container{
+          max-width: 100%;
+          text-align: center;
+          padding: 20px;
+     }
+
+     .choose-container h2{
+           margin-bottom: 20px;
+     }
+
+     .choose-content{ 
           display: flex;
           flex-wrap: wrap;
           gap: 10px;
-          padding: 5px;
           text-align: left;
      }
 
@@ -516,6 +519,16 @@ footer{
 
      /* Featured Episodes */
 
+     .episodes{
+          max-width: 100%;
+          text-align: center;
+          padding: 20px;
+     }
+
+     .episodes h2{
+          margin-bottom: 20px;
+     }
+
      .episodes-container{
           display: flex;
           flex-direction: column;
@@ -526,12 +539,20 @@ footer{
      }
 
      /* Meet the Host */
+
      .host{
-          margin-bottom: 10px;
+          max-width: 100%;
+          text-align: center;
+          padding: 20px;
+     }
+
+     .host h2{
+           margin-bottom: 20px;
      }
      .host-container{
           flex-direction: column;
-          margin-bottom: 40px;
+          margin-bottom: 20px;
+          border-radius: 20px;
      }
 
      .icon{
