@@ -47,6 +47,11 @@ body{
      color: #FFFFFF;
 }
 
+
+.nav-icon{
+     display: none;
+}
+
 li {
      list-style: none;
 }
@@ -97,24 +102,24 @@ header {
      background-repeat: no-repeat;
      background-size: cover;
      background-position: center;
-     padding: 100px 40px 100px;
-     
-     
+     padding: 100px 100px 10px 100px;
 }
 
 .badge{
      position: absolute;
-     left: 643px;
+     left: 605px;
      top: 20px;
 }
 
 .img{
      background-image: url(./assets/hero-circle.png);
-     background-size: 20em;
+     background-size: 20rem;
      padding: 5rem;
      background-position: center;
      background-repeat: no-repeat;
      position: relative;
+     margin-bottom: 90px;
+     top: -35px;
 }
 
 .img-content img{
@@ -253,8 +258,6 @@ p{
      grid-column: 3/ span 3;
 }
 
-
-
 /* episodes-container */
 
 .episodes{
@@ -272,6 +275,7 @@ p{
      display: flex;
      justify-content: space-between;
      align-items: center;
+     text-align: left;
      gap: 30px;
 }
 
@@ -319,7 +323,6 @@ h5{
 
 .host-container{
      display: flex;
-     /* flex-wrap: wrap; */
      align-items: center;
      background-color: #250D44;
      border-radius: 40px;
@@ -378,4 +381,183 @@ footer{
 .footer-icon span{
      display: flex;
      gap: .5rem;
+}
+
+@media screen and (max-width: 576px) {
+
+     /* nav section  */
+     .nav-section{
+          justify-content: space-between;
+          align-items: center;
+          padding: 18px;
+          max-width: 576px;
+          margin: 0 auto;
+     }
+     .menu{
+          position: absolute;
+          display: none;
+          flex-direction: column;
+          text-align: center;
+     }
+
+     .nav-section .btn{
+          display: none;
+     }
+     
+     .nav-icon{
+          display: block;
+     }
+
+     
+
+     /* shear width */
+
+
+     .with{
+          max-width: 576px;
+          margin: 0 auto;
+          text-align: center;
+          padding: 20px;
+     }
+
+     h2{
+          font-size: 30px;
+     }
+
+     p{
+          font-size: 11px;
+          line-height: 20px;
+     }
+
+     /* hero section  */
+
+     .hero-container{
+          padding: 40px 20px;
+     }
+
+     .img-content{
+          padding: 30px 30px 3px 30px;
+          background-image: url(./assets/hero-bg.png);
+          background-repeat: no-repeat;
+          background-size: 110%;
+          background-position: center;
+     }
+
+     .img{
+     background-image: url(./assets/hero-circle.png);
+     background-size: 120px;
+     padding: 30px;
+     background-position: center;
+     background-repeat: no-repeat;
+     position: relative;
+     }
+
+     .img img {
+          width: 42px;
+     }
+
+     .hero-container span{
+          font-size: 9px;
+          
+     }
+     .badge{
+          left: 218px;
+          top: 10px;
+     }
+
+     .content{
+         padding: 0 20px;
+     }
+
+
+     .content p{
+          margin-bottom: 15px;
+     }
+
+     .hero-button{
+          padding: 0 20px;
+     }
+     .hero-button .btn, .btn-2{
+          font-size: 12px;
+          padding: 10px;
+          gap: 5px;
+     }
+
+     /* about the podcast */
+     .podcast-container{
+          text-align: center;
+     }
+     .rating-card{
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+     }
+
+     /* Why Choose TechWave */
+
+     .choose-content{
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+          padding: 5px;
+          text-align: left;
+     }
+
+     .choose-content img{
+          margin-bottom: 10px;
+     }
+
+     .choose-content h3{
+          margin-bottom: 10px;
+     }
+
+     .grid-img-3 p{
+          font-size: 13px;
+     }
+
+     /* Featured Episodes */
+
+     .episodes-container{
+          display: flex;
+          flex-direction: column;
+          text-align: left;
+     }
+     .card-content h3, p{
+          margin-bottom: 10px;
+     }
+
+     /* Meet the Host */
+     .host{
+          margin-bottom: 10px;
+     }
+     .host-container{
+          flex-direction: column;
+          margin-bottom: 40px;
+     }
+
+     .icon{
+          justify-content: center;
+     }
+
+     /* footer  */
+
+     footer{
+          background-image: url(./assets/footer-bg.png);
+          background-repeat: no-repeat;
+          background-size: 180%;
+          background-position: center;
+     }
+
+     .footer-content{
+          text-align: center;
+          padding: 20px;
+     }
+     .footer-content h2{
+     margin-bottom: 10px;
+}
+
+     .footer-icon {
+          margin-bottom: 10px;
+          gap: 20px;
+     }
+
 }
